@@ -60,7 +60,8 @@ console.log(number);
 avengers.reverse();
 console.log(avengers);
 
-//methode concat
 
-avengers.concat();
-console.log(avengers);
+
+//methode concat
+let newhero = avengers.concat(dc);
+console.log(newhero);
