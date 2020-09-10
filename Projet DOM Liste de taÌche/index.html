@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Liste des courses</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12"><img src="logo.png" class="logo"></div>
+
+            <div class="col s12 m6">
+                <div id="main" class="carte">
+                    <div class="ajoutTache">
+                        <div class="row">
+                            <form id="course-form">
+                                <div class="input-field col s12">
+                                    <p>Ajouter une tâche :</p>
+                                    <input type="text" name="contenuTache" id="contenuTache" value="Que veux-tu acheter ?">
+                                </div>
+
+                                <input type="submit" value="Ajouter à ma liste" class="btn" id="ajoutTache" onclick="save()">
+                                <input type="submit" value="effacer" class="btn" onclick="remove()">
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col s12 m6">
+                <div id="liste" class="carte">
+                    <div>
+                        <h3 id="course-liste">Je dois acheter :</h3>
+                        <ul class="collection">
+                            <li class="collection-item">
+                                du fromage
+                                <a href="#" class="delete-item secondary-content">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                pain
+                                <a href="#" class="delete-item secondary-content">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                viande
+                                <a href="#" class="delete-item secondary-content">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                haricot
+                                <a href="#" class="delete-item secondary-content">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <a class="supprimer-course btn" href="">Effacer</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="3.2-les -styles.js"></script>
+    <script src="3.3-le-getelementbyID.js"></script>
+    <script src="3.4 Le GetElementByClassName.js"></script>
+    <script src="3.5- Le forEach.js"></script>
+    <script src="3.6 Les Events.js"></script>
+    <script src="3.7- Les getAttributes et setAttributes.js"></script>
+    <script src="3.8-Naviguer-dans-le-DOM .js"></script>
+    <script src="3.9 Le Local Storage .js"></script>
+    <script src="3.10 Le preventDefault().js"></script>
+
+</body>
+
+</html>
