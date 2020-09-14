@@ -1,4 +1,5 @@
-// DÉFINIR l'interface
+// DÉFINIR l'interface 
+/*
 const form = document.querySelector('#course-form'),
     listeTache = document.querySelector('.collection'),
     supprimerListe = document.querySelector('.supprimer-course'),
@@ -69,4 +70,5 @@ function supprimerUneTache(e) {
         if (confirm('voulez-vous vraiment supprimer ?'))
             e.target.parentElement.parentElement.remove();
     }
-}
+} 
+*/

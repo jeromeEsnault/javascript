@@ -1,10 +1,9 @@
 // DÉFINIR l'interface
-/*
 const form = document.querySelector('#course-form'),
     listeTache = document.querySelector('.collection'),
     supprimerListe = document.querySelector('.supprimer-course'),
-    contenuTache = document.querySelector('#contenuTache');
-
+    contenuTache = document.querySelector('#contenuTache'),
+    filtertache = document.querySelector('#filter');
 
 
 //boutton
@@ -23,6 +22,9 @@ function malistedeTache() {
 
     //netoyer la liste des tache
     supprimerListe.addEventListener('click', supprimerUneListe)
+
+    //filtre les tache
+    filtertache.addEventListener('keyup', filterUneTache)
 }
 
 // ajouter une tache
@@ -77,6 +79,25 @@ function supprimerUneTache(e) {
 
 //netoyer une liste
 function supprimerUneListe() {
-    listeTache.innerHTML = ''
+    listeTache.innerHTML = '';
 }
-*/
+
+
+// filtrage d'une tache
+function filterUneTache(e) {
+    const contenuClavier = e.target.value.toLowerCase()
+
+    document.querySelectorAll('.collection-item').forEach(
+        function(tache) {
+            const motCle = tache.firstChild.textContent;
+            if (motCle.toLocaleLowerCase().indexOf(contenuClavier) != -1) {
+                tache.getElementsByClassName.display = 'block'
+            } else {
+                tache.style.display = 'none'
+            }
+        }
+    );
+
+
+    console.log(contenuClavier);
+}
